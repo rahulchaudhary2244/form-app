@@ -1,11 +1,5 @@
-type Props = { children: React.ReactNode; key: number | string };
+type Props = { children: React.ReactNode };
 
-const EqualWidth = ({ children, key }: Props) => {
-  return (
-    <div key={key} className="flex flex-col flex-1 gap-3 sm:flex-row">
-      {children}
-    </div>
-  );
+export const EqualWidth = ({ children }: Props) => {
+  return <div className="flex flex-col flex-1 gap-3 sm:flex-row">{children}</div>;
 };
-
-export default EqualWidth;

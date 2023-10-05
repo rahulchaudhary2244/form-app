@@ -1,4 +1,4 @@
-import { FormFields } from '../types';
+import { FormFields } from './types';
 
 export const FORM_FIELDS: FormFields = [
   [
@@ -16,7 +16,7 @@ export const FORM_FIELDS: FormFields = [
     },
   ],
   {
-    id: 'Email',
+    id: 'email',
     placeholder: 'Email',
     required: true,
     type: 'email',

@@ -5,10 +5,9 @@ type Props = {
   required?: boolean;
 };
 
-const TextArea = ({ id, name, placeholder, required = false }: Props) => {
+export const TextArea = ({ id, name, placeholder, required = false }: Props) => {
   return (
     <textarea
-      key={id}
       required={required}
       id={id}
       rows={4}
@@ -18,5 +17,3 @@ const TextArea = ({ id, name, placeholder, required = false }: Props) => {
     />
   );
 };
-
-export default TextArea;

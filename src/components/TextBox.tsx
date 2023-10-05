@@ -8,10 +8,9 @@ type Props = {
   id: string;
 };
 
-const TextBox = ({ required = false, name, placeholder, id, type }: Props) => {
+export const TextBox = ({ required = false, name, placeholder, id, type }: Props) => {
   return (
     <input
-      key={id}
       id={id}
       name={name}
       required={required}
@@ -21,5 +20,3 @@ const TextBox = ({ required = false, name, placeholder, id, type }: Props) => {
     />
   );
 };
-
-export default TextBox;
